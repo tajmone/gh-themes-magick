@@ -36,18 +36,16 @@ Contents
 Introduction
 ============
 
-**GitHub Pages automatic generator** allows you to create – in three simple steps – a single-page project website by editing a markdown source document and choosing one of 12 beautiful themes hand-crafted by GitHub designers and developers.
+I started to work on **gh-themes-magick** project at a time when **GitHub Pages automatic generator** did _not_ allow to chose a theme for project sites published from the `/docs/` folder on your `master` branch. But 3 days before this project was completed, GitHub announced that this very feature was now available:
 
-But using the automatic page generator imposes two limitations:
+- https://github.com/blog/2295-new-theme-chooser-for-github-pages
 
-1.  You can’t publish the website from the `/docs/` folder on your `master` branch.
-2.  If you want to edit the page contents in markdown you have to go through the whole processes again.
+... this somehow obliterates the main purpose of **gh-themes-magick** — ie: being able to use GitHub themes from `master` branch and have the website contents mirror the `README` file.
 
-Point (**1**) is the biggest limitation if you want your project’s website to always mirror the contents of the repo’s `README.md` file, because the automatic page generator will create the website in the `gh-pages` branch – making any contents update operation a complex trans-branch Git operation.
+Still ...   **gh-themes-magick** offer an alternative approach to publishing your project site — using pandoc templates instead of Jeyll. This allows easier customization of the themes themselves. Also, this project is open to host user created themes, beside those offered by GitHub; so, hopefully this repo might grow in time, offering a great variety of themes to chose from.
 
-Point (**2**) is a limitation for automating synchronization of contents between the repo’s `README.md` file and the website page – the auto-generated website being in HTML format. So, whenever you want to update your project’s website to mirror the contents of the `README.md` file , you’ll have to manually go over the three-steps process of GH’s automatic page generator.
+Anyhow, the project was ready to be published, so I am publishing it nonetheless.
 
-Here comes to our rescue **gh-themes-magick**!
 
 ------------------------------------------------------------------------
 
@@ -58,7 +56,7 @@ How It Works
 
 This means that now you can:
 
-1.  Enjoy GitHub’s automatic page generator themes even if publishing your website from the `/docs/` folder on your `master` branch .
+1.  Enjoy GitHub’s automatic page generator themes when publishing your website from the `/docs/` folder on your `master` branch .
 2.  Update your website to mirror the repo’s latest `README.md` file, with a single click.
 
 ------------------------------------------------------------------------

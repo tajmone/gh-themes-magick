@@ -9,7 +9,7 @@ This is a live preview of one of the themes bundled with **gh-themes-magick**:
 
 This means that now you can:
 
-1.  Enjoy GitHub’s automatic Page Generator themes even if publishing your website from the `/docs/` folder on your `master` branch .
+1.  Enjoy GitHub’s automatic Page Generator when publishing your website from the `/docs/` folder on your `master` branch .
 2.  Update your website to mirror the repo’s latest `README.md` file, with a single click.
 
   
