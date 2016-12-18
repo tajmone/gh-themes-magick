@@ -511,18 +511,18 @@ class SomeClass:
 [Time Machine x500]: ../../images/themes-thumbs/500/timemachine.gif   "Time Machine theme screenshot"
 
 
-[Architect HTML Prev]:      http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/architect/index.html    "Architect theme live preview"
-[Cayman HTML Prev]:         http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/cayman/index.html       "Cayman theme live preview"
-[Dinky HTML Prev]:          http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/dinky/index.html        "Dinky theme live preview"
-[Hack HTML Prev]:           http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/hack/index.html         "Hack theme live preview"
-[Leap Day HTML Prev]:       http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/leapday/index.html      "Leap Day theme live preview"
-[Merlot HTML Prev]:         http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/merlot/index.html       "Merlot theme live preview"
-[Midnight HTML Prev]:       http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/midnight/index.html     "Midnight theme live preview"
-[Minimal HTML Prev]:        http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/minimal/index.html      "Minimal theme live preview"
-[Modernist HTML Prev]:      http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/modernist/index.html    "Modernist theme live preview"
-[Slate HTML Prev]:          http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/slate/index.html        "Slate theme live preview"
-[Tactile HTML Prev]:        http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/tactile/index.html      "Tactile theme live preview"
-[Time Machine HTML Prev]:   http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-themes/timemachine/index.html  "Time Machine theme live preview"
+[Architect HTML Prev]:      https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/architect/index.html    "Architect theme live preview"
+[Cayman HTML Prev]:         https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/cayman/index.html       "Cayman theme live preview"
+[Dinky HTML Prev]:          https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/dinky/index.html        "Dinky theme live preview"
+[Hack HTML Prev]:           https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/hack/index.html         "Hack theme live preview"
+[Leap Day HTML Prev]:       https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/leapday/index.html      "Leap Day theme live preview"
+[Merlot HTML Prev]:         https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/merlot/index.html       "Merlot theme live preview"
+[Midnight HTML Prev]:       https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/midnight/index.html     "Midnight theme live preview"
+[Minimal HTML Prev]:        https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/minimal/index.html      "Minimal theme live preview"
+[Modernist HTML Prev]:      https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/modernist/index.html    "Modernist theme live preview"
+[Slate HTML Prev]:          https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/slate/index.html        "Slate theme live preview"
+[Tactile HTML Prev]:        https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/tactile/index.html      "Tactile theme live preview"
+[Time Machine HTML Prev]:   https://cdn.rawgit.com/tajmone/gh-themes-magick/61dc465/gh-themes/timemachine/index.html  "Time Machine theme live preview"
 
 
 [Ben Bleikamp]:   https://github.com/bleikamp
