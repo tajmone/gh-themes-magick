@@ -1,0 +1,91 @@
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::: LICENSES ::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Edited: 2016/12/18
+
+“gh-themes-magick” is copyright © 2016, Tristano Ajmone.
+
+“gh-themes-magick” is released under the CREATIVE COMMON ATTRIBUTION 4.0
+International License (CC BY 4.0):
+
+-   https://creativecommons.org/licenses/by/4.0/
+
+The project is built around third party themes, each one isolated in its own
+folder and each released under the terms of its upstream license:
+
+    +-----------+----------------+-----------------------+-----------------+
+    |   THEME   |     AUTHOR     |         FOLDER        |     LICENSE     |
+    |-----------|----------------|-----------------------|-----------------|
+    | Architect | Jason Long     | /gh-themes/architect/ | CC-BY 4.0       |
+    | Cayman    | Jason Long     | /gh-themes/cayman/    | CC-BY 4.0       |
+    | Dinky     | Diana Mounter  | /gh-themes/dinky/     | CC-BY 3.0       |
+    | Leap Day  | Matt Graham    | /gh-themes/leapday/   | CC-BY 3.0 + MIT |
+    | Merlot    | Cameron McEfee | /gh-themes/merlot/    | MIT             |
+    +-----------+----------------+-----------------------+-----------------+
+
+    - “Architect” theme by Jason Long:
+       https://github.com/jasonlong/architect-theme
+
+    - “Cayman” theme by Jason Long:
+       https://github.com/jasonlong/cayman-theme
+
+    - “Dinky” theme by Diana Mounter:
+       https://github.com/broccolini/dinky
+
+    - “Leap” theme by Day Matt Graham:
+       https://github.com/mattgraham/leapday
+
+    - “Merlot” theme by Cameron McEfee /gh-themes/merlot/
+       https://github.com/cameronmcefee/merlot
+
+Within each theme’s folder there is a ‘LICENSE’ file with detailed information
+about the theme’s license terms, and a ‘CHANGELIST’ file with detailed
+information about the adaptative changes made to the original theme.
+
+==============================================================================
+================================ HIGHLIGHT.JS ================================
+==============================================================================
+
+All themes also contains a copy of the “highlight.js” library and one of its
+CSS themes:
+
+-   https://highlightjs.org
+
+“highlight.js” is copyright © 2006, Ivan Sagalaev, released under BSD-3-Clause
+License. The following highlight.js themes have been included in
+“gh-themes-magick” (some with changes):
+
+-   “GitHub Gist” by Louis Barranqueiro.
+-   “Docco”, coverted from “Docco” by Simon Madine.
+-   “VIM-Hybrid”by w0ng.
+
+==============================================================================
+========================= HIGHLIGHT.JS LICENSE TERMS =========================
+==============================================================================
+
+Copyright (c) 2006, Ivan Sagalaev All rights reserved. Redistribution and use
+in source and binary forms, with or without modification, are permitted
+provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of highlight.js nor the names of its contributors 
+      may be used to endorse or promote products derived from this software 
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS’’ AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

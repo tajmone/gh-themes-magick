@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="generator" content="pandoc">
+    <meta name="author" content="Tristano Ajmone">
+    <meta name="dcterms.date" content="2016-12-16">
+    <meta name="description" content="Create your projects’ website from the README.md file and publish it on GitHub Pages directly from master branch…">
+    <meta name="keywords" content="GitHub Pages, website, README.md, README file, repository, repo, project, theme, master branch, pandoc, open source">
+    <title>GitHub Pages Themes Magick — Turn your README file into a website</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/highlight.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="stylesheets/relative/path/to/extra.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- anything you put here will go verbatim in the header section
+         Useful for adding javascripts, custom metadata, and so on... -->
+    <!-- another -->
+  </head>
+  <body>
+
+  <header>
+    <h1>GitHub Pages Themes Magick</h1>
+    <p>Static project website from <code>README.md</code> file — Published from <code>master</code> branch</p>
+  </header>
+
+  <div id="banner">
+    <div class="banner-inner">
+      <span id="logo"></span>
+
+      <a href="https://github.com/tajmone/gh-themes-magick" class="button fork"><strong>Fork On GitHub</strong></a>
+      <div class="downloads">
+        <span>Downloads:</span>
+        <ul>
+          <li><a href="https://github.com/tajmone/gh-themes-magick/archive/master.zip" class="button">ZIP</a></li>
+          <li><a href="https://github.com/tajmone/gh-themes-magick/archive/master.tar.gz" class="button">TAR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- end banner -->
+
+  <div class="wrapper">
+  <nav>
+      <ul></ul>
+    </nav>
+
+    <section>
+
+<div id="starme">
+<iframe style="float:left" src="https://ghbtns.com/github-btn.html?user=tajmone&repo=gh-themes-magick&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<h3>🡸 Give <strong>gh-themes-magick</strong> a star!</h3>
+</div>
+<hr>
+<p>Good news for all maintainers of <strong>Awesome</strong> lists on GitHub: running a GitHub Pages website mirroring your <code>README.md</code> contents is now a <em>one-click</em> operation!</p><p>With <strong>gh-themes-magick</strong> you can publish your project’s single page website from a <code>/docs/</code> folder on your <code>master</code> branch, using <strong>GitHub Page Generator</strong>’s themes, and auto-magically <b>update its contents to mirror the project’s <code>README.md</code></b>.</p><ul><li><b>Fully static</b> (no Jekyll)</li><li>No <code>gh-pages</code> branch involved</li><li>Single YAML configuration file</li></ul><p>The <code>configuration.yaml</code> file exposes all the template’s variables, providing access to the website’s <strong>metadata</strong> fields (description, keywords, ecc.) needed to <b>boost your website SEO,</b> and extra variables to include additional sytlesheets, custom javascript, and more.</p><p>And – of course – this also works with any GitHub project looking for a single-page website.</p><pre><code>STATUS: 5/12 themes ported</code></pre><hr /><h1 id="contents">Contents</h1><!-- #toc --><ul><li><a href="#introduction">Introduction</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#main-features">Main Features</a><ul><li><a href="#single-configuration-file">Single Configuration File</a></li><li><a href="#syntax-highligthing">Syntax Highligthing</a></li></ul></li><li><a href="#available-themes">Available Themes</a></li><li><a href="#setting-up-a-website">Setting up a Website</a></li><li><a href="#updating-its-contents">Updating Its Contents</a></li><li><a href="#licenses-and-credits">Licenses and Credits</a></li></ul><!-- /toc --><hr /><h1 id="introduction">Introduction</h1><p><strong>GitHub Pages automatic generator</strong> allows you to create – in three simple steps – a single-page project website by editing a markdown source document and choosing one of 12 beautiful themes hand-crafted by GitHub designers and developers.</p><p>But using the automatic page generator imposes two limitations:</p><ol><li>You can’t publish the website from the <code>/docs/</code> folder on your <code>master</code> branch.</li><li>If you want to edit the page contents in markdown you have to go through the whole processes again.</li></ol><p>Point (<strong>1</strong>) is the biggest limitation if you want your project’s website to always mirror the contents of the repo’s <code>README.md</code> file, because the automatic page generator will create the website in the <code>gh-pages</code> branch – making any contents update operation a complex trans-branch Git operation.</p><p>Point (<strong>2</strong>) is a limitation for automating synchronization of contents between the repo’s <code>README.md</code> file and the website page – the auto-generated website being in HTML format. So, whenever you want to update your project’s website to mirror the contents of the <code>README.md</code> file , you’ll have to manually go over the three-steps process of GH’s automatic page generator.</p><p>Here comes to our rescue <strong>gh-themes-magick</strong>!</p><hr /><h1 id="how-it-works">How It Works</h1><p><strong>gh-themes-magick</strong> exploits <strong>pandoc</strong>’s super-powers to <b>convert your repo’s <code>README.md</code> file to a <code>docs/index.html</code> themed file.</b> Your are basically getting a copy of the same themes found on GitHub’s automatic page generator, plus a pandoc html5 template for each theme, and scripts to auto-magically convert/update your project’s single-page website contents from the <code>README.md</code> file in your repo’s root.</p><p>This means that now you can:</p><ol><li>Enjoy GitHub’s automatic page generator themes even if publishing your website from the <code>/docs/</code> folder on your <code>master</code> branch .</li><li>Update your website to mirror the repo’s latest <code>README.md</code> file, with a single click.</li></ol><hr /><h1 id="main-features">Main Features</h1><h2 id="single-configuration-file">Single Configuration File</h2><p>Website configuration is handled by a single YAML file: <code>configuration.yaml</code>.</p><p>Its settings are highly intuitive, comments and sample values are provided for guidance:</p><pre class="yaml"><code># ==============================================================================
+#                                 WEBSITE HEADER                                
+# ==============================================================================
+# These variables are shown in the website header.
+# ------------------------------------------------------------------------------
+website_title:   &#39;GitHub Pages Themes Magick&#39;
+website_tagline: &#39;A one-click website in `master` branch&#39;</code></pre><p>You only have to set once your GitHub username and repo name, <strong>gh-themes-magick</strong> will create all the template’s required URLs from them:</p><pre class="yaml"><code># ==============================================================================
+#                                  GITHUB LINKS                                 
+# ==============================================================================
+# The following variables are used for automagically creating links to your repo
+# on GitHub, and for the .zip and .tar download links.
+# ------------------------------------------------------------------------------
+# Example: https://github.com/tajmone/gh-themes-magick
+your_github_username: tajmone
+your_github_reponame: gh-themes-magick</code></pre><p>The <b>website metadata is exposed through template variables</b> which allow you to control how your website will be indexed by search engines (optimizing your ranking):</p><pre class="yaml"><code>description: &#39;Your project description, to be shown in search engines results.&#39;
+keywords:
+  - your
+  - keywords list</code></pre><p>And many more fine-grain settings are availble within <code>configuration.yaml</code>.</p><h2 id="syntax-highligthing">Syntax Highligthing</h2><p><strong>gh-themes-magick</strong> uses <a href="https://highlightjs.org"><strong>highlight.js</strong></a> browser library for highlighting code blocks.</p><p>Syntax highlighting occurs automatically because <strong>highlight.js</strong> does a good job at auto-detecting languages within code blocks. But you can also follow best practices and add the language identifier to fenced code blocks in your markdown source:</p><pre class="nohighlight"><code>```ruby
+require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
+```</code></pre><p>and your code will shine like this on your project’s website:</p><pre class="ruby"><code>require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html</code></pre><p>You can disable syntax highlighting for any fenced code block by giving it the <code>nohighlight</code> identifier:</p><pre class="nohighlight"><code>```nohighlight
+@ECHO &quot;This block won&#39;t be syntax-highlighted&quot;
+```</code></pre><p>Each theme comes with a custom prebuilt version of <strong>highlight.js</strong> (v9.8.0) with 23 commonly used languages:</p><table><tbody><tr class="odd"><td>1. Apache</td><td>13. JavaScript</td></tr><tr class="even"><td>2. Bash</td><td>14. Makefile</td></tr><tr class="odd"><td>3. C# 15. Markdown</td><td>15. Markdown</td></tr><tr class="even"><td>4. C++ 16. Nginx</td><td>16. Nginx</td></tr><tr class="odd"><td>5. CSS</td><td>17. Objective-C</td></tr><tr class="even"><td>6. CoffeeScript</td><td>18. PHP</td></tr><tr class="odd"><td>7. Diff</td><td>19. Perl</td></tr><tr class="even"><td>8. HTML, XML</td><td>20. Python</td></tr><tr class="odd"><td>9. HTTP</td><td>21. Ruby</td></tr><tr class="even"><td>10. Ini</td><td>22. SQL</td></tr><tr class="odd"><td>11. JSON</td><td>23. YAML</td></tr><tr class="even"><td>12. Java</td><td></td></tr></tbody></table><p>You can <b>create your custom build of <strong>highlight.js</strong> directly in your browser</b>: on the <a href="https://highlightjs.org/download/#download-form">website’s download page</a> pick any languages you want from <b>a list of 169 languages</b> and download a taylored version to overwrite the one that comes with <strong>gh-themes-magick</strong> by default.</p><p>You can also overwrite the syntax highlighting theme, replacing it with on of the 77 themes available from <strong>highlight.js</strong>, or with your custom color scheme.</p><p><strong>Markdown</strong></p><pre><code># Markdown Is Cool
+
+Write text [with links](http://example.com) inline or [link references][1].
+
+* one _thing_ has *em*phasis
+* two __things__ are **bold**
+
+[1]: http://example.com</code></pre><p><strong>Python</strong></p><pre class="python"><code>@requires_authorization
+def somefunc(param1=&#39;&#39;, param2=0):
+    r&#39;&#39;&#39;A docstring&#39;&#39;&#39;
+    if param1 &gt; param2: # interesting
+        print &#39;Gre\&#39;ater&#39;
+    return (param2 - param1 + 1 + 0b10l) or None</code></pre><p><strong>diff</strong></p><pre class="diff"><code>Index: languages/ini.js
+===================================================================
+--- languages/ini.js    (revision 199)
++++ languages/ini.js    (revision 200)
+@@ -1,8 +1,7 @@
+ hljs.LANGUAGES.ini =
+ {
+   case_insensitive: true,
+-  defaultMode:
+-  {
++  defaultMode: {
+     contains: [&#39;comment&#39;, &#39;title&#39;, &#39;setting&#39;],
+     illegal: &#39;[^\\s]&#39;
+   },</code></pre><p><strong>CSS</strong></p><pre class="css"><code>@font-face {
+  font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+}
+
+body, .usertext {
+  color: #F0F0F0; background: #600;
+  font-family: Chunkfive, sans;
+}
+
+@import url(print.css);
+@media print {
+  a[href^=http]::after {
+    content: attr(href)
+  }
+}</code></pre><p><strong>Apacheconf</strong></p><pre class="apacheconf"><code># rewrite`s rules for wordpress pretty url
+LoadModule rewrite_module  modules/mod_rewrite.so
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [NC,L]
+
+ExpiresActive On
+ExpiresByType application/x-javascript  &quot;access plus 1 days&quot;
+
+Order Deny,Allow
+Allow from All
+
+&lt;Location /maps/&gt;
+  RewriteMap map txt:map.txt
+  RewriteMap lower int:tolower
+  RewriteCond %{REQUEST_URI} ^/([^/.]+)\.html$ [NC]
+  RewriteCond ${map:${lower:%1}|NOT_FOUND} !NOT_FOUND
+  RewriteRule .? /index.php?q=${map:${lower:%1}} [NC,L]
+&lt;/Location&gt;</code></pre><hr /><h1 id="available-themes">Available Themes</h1><p>Currently, <b><strong>5</strong> of the <strong>12</strong> GitHub themes have been ported to <strong>gh-themes-magick</strong></b>, the one used by this site (Architect, by Jason Long) being one of them.</p><p>Click on the thumbnails to see a live preview of the other four:</p><table><colgroup><col style="width: 53%" /><col style="width: 46%" /></colgroup><thead><tr class="header"><th style="text-align: center;"><h2>Cayman</h2></th><th style="text-align: center;"><h2>Dinky</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Jason Long</td><td style="text-align: center;">by Diana Mounter</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/cayman/index.html" title="Cayman theme live preview"><img src="https://github.com/tajmone/gh-themes-magick/raw/master/images/themes-thumbs/300/cayman.gif" title="Cayman theme screenshot" alt="Cayman" /></a></td><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/dinky/index.html" title="Dinky theme live preview"><img src="https://github.com/tajmone/gh-themes-magick/raw/master/images/themes-thumbs/300/dinky.gif" title="Dinky theme screenshot" alt="Dinky" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC-BY 4.0</td><td style="text-align: center;">CC-BY 3.0</td></tr></tbody></table><table><colgroup><col style="width: 53%" /><col style="width: 46%" /></colgroup><thead><tr class="header"><th style="text-align: center;"><h2>Leap Day</h2></th><th style="text-align: center;"><h2>Merlot</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Matt Graham</td><td style="text-align: center;">by Cameron McEfee</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/leapday/index.html" title="Leap Day theme live preview"><img src="https://github.com/tajmone/gh-themes-magick/raw/master/images/themes-thumbs/300/leapday.gif" title="Leap Day theme screenshot" alt="Leap Day" /></a></td><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/merlot/index.html" title="Merlot theme live preview"><img src="https://github.com/tajmone/gh-themes-magick/raw/master/images/themes-thumbs/300/merlot.gif" title="Merlot theme screenshot" alt="Merlot" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC BY-SA 3.0</td><td style="text-align: center;">MIT</td></tr></tbody></table><hr /><h1 id="setting-up-a-website">Setting up a Website</h1><p>These are the steps:</p><ol><li>Install <a href="https://github.com/jgm/pandoc/releases/latest"><strong>pandoc</strong></a></li><li>Get <a href="https://github.com/tajmone/gh-themes-magick"><strong>gh-themes-magick</strong></a></li><li>Choose a theme</li><li>Copy it to your repo’s <code>master</code> branch</li><li>Rename the theme folder to <code>/docs/</code></li><li>Fill-in the YAML config file</li><li>Run the <code>abracadabra</code> script</li><li>Commit and push changes</li><li>Set GitHub Pages to publish from <code>/master/</code> branch <code>/docs/</code> folder</li></ol><p>That’s it! Your project website is now live.</p><p>(<a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch">Click here to view GitHub’s Help on how to configure a publishing source for GitHub Pages</a>)</p><hr /><h1 id="updating-its-contents">Updating Its Contents</h1><p>Whenever you want to update your website to mirror the contents of your repo’s <code>README.md</code>:</p><ol><li>Run the <code>abracadabra</code> script</li><li>Commit and push changes to <code>master</code></li></ol><p>For detailed instructions on setup and customization, refer to the project’s documentation and <a href="https://github.com/tajmone/gh-themes-magick/wiki">online Wiki</a>.</p><hr /><h1 id="licenses-and-credits">Licenses and Credits</h1><p><strong>gh-themes-magick</strong> is copyright © 2016, Tristano Ajmone (<a href="https://github.com/tajmone">@tajmone</a>).</p><p><strong>gh-themes-magick</strong> is released under the <strong>Creative Common Attribution 4.0</strong> International License (CC BY 4.0). <b>The project is built around third party themes</b>, each one isolated in its own folder and <b>each released under the terms of its upstream license</b>:</p><table><thead><tr class="header"><th>THEME</th><th>AUTHOR</th><th>FOLDER</th><th style="text-align: center;">LICENSE</th></tr></thead><tbody><tr class="odd"><td><a href="https://github.com/jasonlong/architect-theme" title="Architect theme project page">Architect</a></td><td>Jason Long</td><td><code>/gh-themes/architect/</code></td><td style="text-align: center;">CC-BY 4.0</td></tr><tr class="even"><td><a href="https://github.com/jasonlong/cayman-theme" title="Cayman theme project page">Cayman</a></td><td>Jason Long</td><td><code>/gh-themes/cayman/</code></td><td style="text-align: center;">CC-BY 4.0</td></tr><tr class="odd"><td><a href="https://github.com/broccolini/dinky" title="Dinky theme project page">Dinky</a></td><td>Diana Mounter</td><td><code>/gh-themes/dinky/</code></td><td style="text-align: center;">CC-BY 3.0</td></tr><tr class="even"><td><a href="https://github.com/mattgraham/leapday" title="Leap Day theme project page">Leap Day</a></td><td>Matt Graham</td><td><code>/gh-themes/leapday/</code></td><td style="text-align: center;">CC-BY 3.0 + MIT</td></tr><tr class="odd"><td><a href="https://github.com/cameronmcefee/merlot" title="Merlot theme project page">Merlot</a></td><td>Cameron McEfee</td><td><code>/gh-themes/merlot/</code></td><td style="text-align: center;">MIT</td></tr></tbody></table><p>Detailed information on the themes’ licenses, and about the adaptative changes made to the original code and resources, can be found in each theme’s folder, inside the <code>LICENSE</code> and <code>CHANGELIST</code> files.</p><p>All themes also contains a copy of the <a href="https://highlightjs.org"><strong>highlight.js</strong></a> library and one of its CSS themes. <b><strong>Highlight.js</strong> is copyright © 2006, <a href="https://github.com/isagalaev">Ivan Sagalaev</a>, released under BSD-3-Clause License.</b> The following highlight.js themes have been included in <strong>gh-themes-magick</strong> (some with changes):</p><ul><li>“<a href="https://github.com/isagalaev/highlight.js/blob/master/src/styles/github-gist.css"><strong>GitHub Gist</strong></a>” by <a href="https://github.com/LouisBarranqueiro">Louis Barranqueiro</a>.</li><li>“<a href="https://github.com/isagalaev/highlight.js/blob/master/src/styles/docco.css"><strong>Docco</strong></a>”, coverted from <a href="http://jashkenas.github.io/docco/">Docco</a> by <a href="https://github.com/thingsinjars">Simon Madine</a>.</li><li>“<a href="https://github.com/isagalaev/highlight.js/blob/master/src/styles/hybrid.css"><strong>VIM-Hybrid</strong>”</a> by w0ng (<a href="https://github.com/w0ng/vim-hybrid" class="uri">https://github.com/w0ng/vim-hybrid</a>)</li></ul><p><b>Tristano Ajmone (<a href="https://github.com/tajmone">@tajmone</a>) is the creator an maintainer of the <strong>gh-themes-magick</strong> project.</b> First released in December, 2016.</p>
+<div id="starmereminder">
+<iframe style="float:left" src="https://ghbtns.com/github-btn.html?user=tajmone&repo=gh-themes-magick&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+<h3>🡸 Don’t forget to star <strong>gh-themes-magick</strong>!</h3>
+</div>
+
+      </section>
+
+      <footer>
+        <p><span class="small">Generated with<br><a href="https://tajmone.github.io/gh-themes-magick/"><strong>gh-themes-magick</strong></a><br>&mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>

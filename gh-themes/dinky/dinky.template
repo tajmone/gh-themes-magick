@@ -1,0 +1,87 @@
+<!doctype html>
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="generator" content="pandoc">
+$for(author-meta)$
+    <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(description)$
+    <meta name="description" content="$description$">
+$endif$
+$if(keywords)$
+    <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+$if(quotes)$
+    <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+    <title>$title$</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/highlight.css">
+$for(css)$
+    <link rel="stylesheet" href="stylesheets/$css$">
+$endfor$
+$if(math)$
+    $math$
+$endif$
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-30955754-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+$for(header-includes)$
+    $header-includes$
+$endfor$
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">$website_title$</h1>
+        <p class="header">$website_tagline$</p>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/$your_github_username$/$your_github_reponame$/archive/master.zip">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/$your_github_username$/$your_github_reponame$/archive/master.tar.gz">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/$your_github_username$/$your_github_reponame$">View On GitHub</a></li>
+        </ul>
+        <p class="header">This project is maintained by <a class="header name" href="http://github.com/$your_github_username$">$your_github_username$</a></p>
+      </header>
+      <section>
+
+$for(include-before)$
+$include-before$
+$endfor$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+
+      </section>
+      <footer>
+        <p><small>Generated with<br><a href="https://tajmone.github.io/gh-themes-magick/"><strong>gh-themes-magick</strong></a><br>using the <a href="https://github.com/broccolini/dinky">Dinky theme</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>

@@ -1,0 +1,43 @@
+pre {
+	padding: 14px 0px 10px 10px;
+}
+pre > code.hljs {
+  padding: 0px;
+}
+
+.hljs {
+  font-size: 12px;
+}
+
+div#starme,
+div#starmereminder {
+	height:38px;
+	padding: 4px;
+	margin-bottom: 10px;
+	vertical-align:middle;
+	background-color:#eee;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+#starme h3,
+#starmereminder h3 {
+	line-height:30px;
+	color: #3F72B3;
+}
+#starme h3 strong,
+#starmereminder h3 strong {
+	color: #CA0076;
+}
+
+.wrapper section b {		/* --- Yellow Highlighter --- */
+	padding: 2px 3px;
+	background: #D1FF75;
+}
+.wrapper section b strong {
+	color: #CA0076;
+}
+.wrapper section b code {
+	font-weight: normal;
+	color: #D1FF75;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="generator" content="pandoc">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Jason Long">
+    <meta name="author" content="Collaborator Two Name">
+    <meta name="author" content="Another Collaborator">
+    <meta name="dcterms.date" content="2016-12-12">
+    <meta name="description" content="Your project description, to be shown in search engines results.">
+    <meta name="keywords" content="your, keywords list, for, search engines, indexing">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/highlight.css" media="screen" />
+    <script src="javascripts/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/your_custom.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/another_stylesheet.css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Architect Theme — As shown in browser tab and bookmarks</title>
+    <!-- anything you put here will go verbatim in the header section
+         Useful for adding javascripts, custom metadata, and so on... -->
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Architect Theme</h1>
+        <h2>A preview of Jason Long’s Architect Theme</h2>
+        <a href="https://github.com/jasonlong/architect-theme" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+<!-- anything you put here will go before the opening <body> tag
+     (ie: before the README’s contents) Markdown will become HTML  -->
+<h1 id="github-themes-magick">GitHub Themes Magick</h1><p>This is a live preview of one of the themes bundled with <strong>gh-themes-magick</strong>:</p><ul><li><a href="https://github.com/tajmone/gh-themes-magick" class="uri">https://github.com/tajmone/gh-themes-magick</a> — project page</li><li><a href="https://tajmone.github.io/gh-themes-magick" class="uri">https://tajmone.github.io/gh-themes-magick</a> — project website</li></ul><p><strong>gh-themes-magick</strong> exploits <strong>pandoc</strong>’s super-powers to convert your repo’s <code>README.md</code> file to a <code>docs/index.html</code> themed file. Your are basically getting a copy of the same themes found on <a href="https://github.com/blog/1081-instantly-beautiful-project-pages">GitHub Page Generator</a>, plus a pandoc html5 template for each theme, and scripts to auto-magically convert/update your project’s single-page website contents from the <code>README.md</code> file in your repo’s root.</p><p>This means that now you can:</p><ol><li>Enjoy GitHub’s automatic Page Generator themes even if publishing your website from the <code>/docs/</code> folder on your <code>master</code> branch .</li><li>Update your website to mirror the repo’s latest <code>README.md</code> file, with a single click.</li></ol><hr /><!-- #toc --><ul><li><a href="#themes-previews">Themes Previews</a><ul><li><a href="#quick-usage-instructions">Quick Usage Instructions</a><ul><li><a href="#theme-setup">Theme Setup</a></li><li><a href="#customizationediting">Customization/Editing</a></li><li><a href="#publishing-on-github-pages">Publishing on Github Pages</a></li></ul></li></ul></li><li><a href="#ported-themes">Ported Themes</a></li><li><a href="#unported-themes">Unported Themes</a></li><li><a href="#configuration">Configuration</a></li><li><a href="#syntax-highlighting">Syntax Highlighting</a></li></ul><!-- /toc --><hr /><h1 id="themes-previews">Themes Previews</h1><p>You can use theme previews to experiment locally with themes, styles and customizations before publishing your website. This page is auto-generated from the <code>README.md</code> file in its parent folder:</p><pre><code>/gh-themes-magick/gh-themes/README.md</code></pre><p>All theme previews are built from the same README file.</p><p>To update a theme’s html preview, run the <code>abracadbra</code> script within its folder (<code>abracadbra.sh</code> under Linux, <code>abracadbra.bat</code> under Windows). To update all theme previews at one, run <code>global-spell.bat</code> (Windows only).</p><h2 id="quick-usage-instructions">Quick Usage Instructions</h2><p>To use a theme in your project:</p><h3 id="theme-setup">Theme Setup</h3><ol><li>Clone or <a href="https://github.com/tajmone/gh-themes-magick/archive/master.zip">download</a> <a href="https://github.com/tajmone/gh-themes-magick"><strong>gh-themes-magick</strong></a></li><li>Choose a theme from the <code>/themes/</code> folder</li><li>Copy the theme’s folder to your repo’s <code>master</code> branch</li><li>Rename the theme’s folder to <code>docs</code> (eg: from <code>dinky</code>)</li></ol><h3 id="customizationediting">Customization/Editing</h3><ol><li>Edit the <code>/docs/configuration.yaml</code> file</li><li>Run the <code>/docs/abracadabra</code> script to build/update the website</li><li>Preview locally <code>/docs/index.html</code></li></ol><p>Keep editing your <code>/README.md</code> file and going through these last three steps until your ready to publish.</p><blockquote><p><strong>NOTE</strong>: Keep in mind that relative links will yeld different results in <code>/README.md</code> and its <code>/docs/index.html</code> counterpart — test well before publishing.</p></blockquote><h3 id="publishing-on-github-pages">Publishing on Github Pages</h3><p>When you are satisfied with your local preview of the website:</p><ul><li>Commit and push changes to <code>master</code></li></ul><p>The first time you publish, you’ll also need to:</p><ul><li>Set GitHub Pages to publish from <code>master</code> branch <code>/docs</code> folder</li></ul><p>(<a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch">Click here to view GitHub’s Help on how to configure a publishing source for GitHub Pages</a>)</p><p><strong>HOW DOES THIS HAPPEN/WORK?</strong></p><p>Your repo is now set to publish the project’s website from <code>master</code> branch <code>/docs/</code> folder. The <code>/docs/</code> folder is just the chosen theme’s folder renamed.</p><p>The <code>/docs/abracadabra</code> script invokes pandoc to convert <code>../README.md</code> (ie: the <code>README.md</code> file in the <em>parent</em> folder) to <code>./index.html</code> (ie: to <code>/docs/index.html</code>) — which is your single-page website’s index.</p><p>These are the key files of the repository:</p><pre class="nohighlight"><code>/docs/                  &lt;= Theme folder renamed (eg: was &#39;dinky&#39;).
+/docs/abracadabra.bat   &lt;= Window script for building website.
+/docs/abracadabra.sh    &lt;= Linux version of website building script.
+/docs/index.html        &lt;= Website page built from &#39;/README.md&#39;.
+                           It’s updated every time you run the
+                           &#39;abracadabra&#39; script.
+/README.md              &lt;= Repo’s README, the website will mirror its
+                           contents in &#39;index.html&#39;.</code></pre><h1 id="ported-themes">Ported Themes</h1><p>Currently, <strong>5</strong> of the <strong>12</strong> themes (layouts) available on GitHub Page Generator have been ported to <strong>gh-themes-magick</strong>. More themes will be ported soon.</p><p>Click on a theme’s thumbnail to see its live preview:</p><table><thead><tr class="header"><th style="text-align: center;"><h2>Architect</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Jason Long</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/architect/index.html" title="Architect theme live preview"><img src="../../images/themes-thumbs/500/architect.gif" title="Architect theme screenshot" alt="Architect" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC-BY 4.0</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Cayman</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Jason Long</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/cayman/index.html" title="Cayman theme live preview"><img src="../../images/themes-thumbs/500/cayman.gif" title="Cayman theme screenshot" alt="Cayman" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC-BY 4.0</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Dinky</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Diana Mounter</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/dinky/index.html" title="Dinky theme live preview"><img src="../../images/themes-thumbs/500/dinky.gif" title="Dinky theme screenshot" alt="Dinky" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC-BY 3.0</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Leap Day</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Matt Graham</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/leapday/index.html" title="Leap Day theme live preview"><img src="../../images/themes-thumbs/500/leapday.gif" title="Leap Day theme screenshot" alt="Leap Day" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC BY-SA 3.0</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Merlot</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Cameron McEfee</td></tr><tr class="even"><td style="text-align: center;"><a href="http://htmlpreview.github.io/?https://github.com/tajmone/gh-themes-magick/blob/master/gh-thems/merlot/index.html" title="Merlot theme live preview"><img src="../../images/themes-thumbs/500/merlot.gif" title="Merlot theme screenshot" alt="Merlot" /></a></td></tr><tr class="odd"><td style="text-align: center;">MIT</td></tr></tbody></table><h1 id="unported-themes">Unported Themes</h1><p>The following themes are in the work queue, waiting to be ported. (Click on a theme’s thumbnail to visit its project page.)</p><table><thead><tr class="header"><th style="text-align: center;"><h2>Midnight</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Matt Graham</td></tr><tr class="even"><td style="text-align: center;"><a href="https://github.com/mattgraham/midnight" title="Midnight theme project page"><img src="../../images/themes-thumbs/500/midnight.gif" title="Midnight theme screenshot" alt="Midnight" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC-BY 3.0 + MIT</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Minimal</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Steve Smith</td></tr><tr class="even"><td style="text-align: center;"><a href="https://github.com/orderedlist/minimal" title="Minimal theme project page"><img src="../../images/themes-thumbs/500/minimal.gif" title="Minimal theme screenshot" alt="Minimal" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC BY-SA 3.0</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Modernist</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Steve Smith</td></tr><tr class="even"><td style="text-align: center;"><a href="https://github.com/orderedlist/modernist" title="Modernist theme project page"><img src="../../images/themes-thumbs/500/modernist.gif" title="Modernist theme screenshot" alt="Modernist" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC BY-SA 3.0</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Slate</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Jason Costello</td></tr><tr class="even"><td style="text-align: center;"><a href="https://github.com/jasoncostello/slate" title="Slate theme project page"><img src="../../images/themes-thumbs/500/slate.gif" title="Slate theme screenshot" alt="Slate" /></a></td></tr><tr class="odd"><td style="text-align: center;">MIT</td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Tactile</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Jason Long</td></tr><tr class="even"><td style="text-align: center;"><a href="https://github.com/jasonlong/tactile-theme" title="Tactile theme project page"><img src="../../images/themes-thumbs/500/tactile.gif" title="Tactile theme screenshot" alt="Tactile" /></a></td></tr><tr class="odd"><td style="text-align: center;">CC-BY 4.0</td></tr></tbody></table><p>These last two themes will not be ported into <strong>gh-themes-magick</strong> — the first one’s sources are not available for sharing, the other has no FOSS license attached to its project.</p><table><thead><tr class="header"><th style="text-align: center;"><h2>Hack</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by <a href="https://github.com/bleikamp">Ben Bleikamp</a></td></tr><tr class="even"><td style="text-align: center;"><img src="../../images/themes-thumbs/500/hack.gif" title="Hack theme screenshot" alt="Hack" /></td></tr><tr class="odd"><td style="text-align: center;">— no source code found —</td></tr><tr class="even"><td style="text-align: center;"><em>license unknown</em></td></tr></tbody></table><table><thead><tr class="header"><th style="text-align: center;"><h2>Time Machine</h2></th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">by Jon Rohan</td></tr><tr class="even"><td style="text-align: center;"><a href="https://github.com/jonrohan/time-machine-theme" title="Time Machine theme project page"><img src="../../images/themes-thumbs/500/timemachine.gif" title="Time Machine theme screenshot" alt="Time Machine" /></a></td></tr><tr class="odd"><td style="text-align: center;">copyrighted</td></tr></tbody></table><hr /><h1 id="configuration">Configuration</h1><p>To configure your project’s website all you have to do is fill-in the variable fields of a single configuration file inside the theme’s folder:</p><ul><li><code>configuration.yaml</code></li></ul><p>It’s all rather self-explaining and intuitive; nonetheless, instructions are provided in comment lines. Here is how the config file looks like:</p><pre class="yaml"><code>
+---
+# ^ DON&#39;T REMOVE the &quot;---&quot; above!
+# ==============================================================================
+#                                 WEBSITE HEADER                                
+# ==============================================================================
+# These variables are shown in the website header.
+# ------------------------------------------------------------------------------
+website_title:    &#39;This is the Title shown in the Web page&#39;
+website_tagline:  &#39;This is the tagline below the Website Title&#39;
+# ==============================================================================
+#                                  GITHUB LINKS                                 
+# ==============================================================================
+# The following variables are used for automagically creating links to your repo
+# on GitHub, and for the .zip and .tar download links.
+# Substitute sample values with your username and repository name as they appear
+# on GitHub (CASE SENSITIVE!!!)
+# ------------------------------------------------------------------------------
+# Example: https://github.com/tajmone/gh-themes-magick
+your_github_username: tajmone
+your_github_reponame: gh-themes-magick
+
+# ==============================================================================
+#                                   HTML META                                   
+# ==============================================================================
+# HTML Metadata -- for &lt;head&gt; section
+# If you don&#39;t need a variable, delete its line or comment it out with a `#`!
+# ------------------------------------------------------------------------------
+title: &#39;Dinky Theme — As shown in browser tab and bookmarks&#39;
+lang:   en
+date:   December 12, 2016
+author:
+  - Tristano Ajmone
+  - Collaborator Name
+  - Another Collaborator
+description: &#39;Your project description, to be shown in search engines results.&#39;
+keywords:
+  - your
+  - keywords list
+  - for
+  - search engines
+  - indexing
+# ==============================================================================
+#                             EXTRA CSS STYLESHEETS                             
+# ==============================================================================
+# An optional list of extra CSS stylesheets to include from the &quot;/stylesheets/&quot;
+# theme&#39;s subfolder. Just place your custom stylesheets in that folder and add 
+# their filenames to this list.
+# DON&#39;T USE ABSOLUTE URLs (ie: &quot;https://&quot; or &quot;http://&quot;)!!! If you do it, the
+# template will break badly. For includind CSS files with absolute URLs, use the 
+# &quot;header-includes:&quot; scalar instead (see below).
+# ------------------------------------------------------------------------------
+css:
+  - your_custom.css
+  - another_stylesheet.css
+# ==============================================================================
+#                        CUSTOM HTML TO INJECT IN HEADER                        
+# ==============================================================================
+# This optional indented block literal scalar can be used to inject (verbatim)
+# raw html at the end of the head section, just before the closing &lt;/head&gt; tag.
+# This can be used to include CSS with absolute URLs, or JavaScript files -- or
+# anything you want, without actually editing the template file.
+# ------------------------------------------------------------------------------
+header-includes: |
+  &lt;!-- anything you put here will go verbatim in the header section
+       Useful for adding javascripts, custom metadata, and so on... --&gt;
+# ******************************************************************************
+# *                             INSERT BEFORE BODY                             *
+# ******************************************************************************
+# You can inject some extra contents after the opening &lt;body&gt; tag and before the
+# contents of your &#39;README.md&#39; file. It will be parsed as markdown and converted
+# to html by pandoc. Use raw html if you need advanced features, but remember
+# that all loose text will be enclosed in &lt;p&gt; tags -- wrap it inside a &lt;div&gt; if
+# you don&#39;t want it parsed as markdown!
+# ------------------------------------------------------------------------------
+include-before: |
+    &lt;!-- anything you put here will go before the opening &lt;body&gt; tag
+         (ie: before the README’s contents) Markdown will become HTML  --&gt;
+# ******************************************************************************
+# *                             INSERT AFTER BODY                              *
+# ******************************************************************************
+# You can also inject extra contents after those of your &#39;README.md&#39; file and
+# before the closing &lt;/body&gt; tag. Same rules as for &#39;include-before&#39; variable.
+# ------------------------------------------------------------------------------
+include-after: |
+    &lt;!-- anything you put here will go before the closing &lt;/body&gt; tag
+         (ie: after the README’s contents) Markdown will become HTML  --&gt;
+    ---
+    # Injected Text
+    
+    This paragraph, the preceding heading and horizontal ruler were defined in
+    the `include-after` string variable inside the YAML configuration file.
+    They were injected after the contents of the `README.md` file, and before
+    the closing `&lt;/body&gt;` tag.
+# ------------------------------------------------------------------------------
+# DON&#39;T REMOVE the &quot;...&quot; below:
+...</code></pre><h1 id="syntax-highlighting">Syntax Highlighting</h1><p><strong>gh-themes-magick</strong> uses <a href="https://highlightjs.org"><strong>highlight.js</strong></a> browser library for highlighting code blocks.</p><p>Each theme comes with a custom prebuilt version of <strong>highlight.js</strong> (v9.8.0) with 23 commonly used languages:</p><table><tbody><tr class="odd"><td>1. Apache</td><td>13. JavaScript</td></tr><tr class="even"><td>2. Bash</td><td>14. Makefile</td></tr><tr class="odd"><td>3. C# 15. Markdown</td><td>15. Markdown</td></tr><tr class="even"><td>4. C++ 16. Nginx</td><td>16. Nginx</td></tr><tr class="odd"><td>5. CSS</td><td>17. Objective-C</td></tr><tr class="even"><td>6. CoffeeScript</td><td>18. PHP</td></tr><tr class="odd"><td>7. Diff</td><td>19. Perl</td></tr><tr class="even"><td>8. HTML, XML</td><td>20. Python</td></tr><tr class="odd"><td>9. HTTP</td><td>21. Ruby</td></tr><tr class="even"><td>10. Ini</td><td>22. SQL</td></tr><tr class="odd"><td>11. JSON</td><td>23. YAML</td></tr><tr class="even"><td>12. Java</td><td></td></tr></tbody></table><p>Here are some syntax highlighting previews…</p><p><strong>Apacheconf</strong></p><pre class="apacheconf"><code># rewrite`s rules for wordpress pretty url
+LoadModule rewrite_module  modules/mod_rewrite.so
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [NC,L]
+
+ExpiresActive On
+ExpiresByType application/x-javascript  &quot;access plus 1 days&quot;
+
+Order Deny,Allow
+Allow from All
+
+&lt;Location /maps/&gt;
+  RewriteMap map txt:map.txt
+  RewriteMap lower int:tolower
+  RewriteCond %{REQUEST_URI} ^/([^/.]+)\.html$ [NC]
+  RewriteCond ${map:${lower:%1}|NOT_FOUND} !NOT_FOUND
+  RewriteRule .? /index.php?q=${map:${lower:%1}} [NC,L]
+&lt;/Location&gt;</code></pre><p><strong>C++</strong></p><pre class="cpp"><code>/* make cpp win deterministically over others with C block comments */
+cout &lt;&lt; endl;
+#include &lt;iostream&gt;
+
+int main(int argc, char *argv[]) {
+
+  /* An annoying &quot;Hello World&quot; example */
+  for (auto i = 0; i &lt; 0xFFFF; i++)
+    cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; endl;
+
+  char c = &#39;\n&#39;;
+  unordered_map &lt;string, vector&lt;string&gt; &gt; m;
+  m[&quot;key&quot;] = &quot;\\\\&quot;; // this is an error
+
+  return -2e3 + 12l;
+}</code></pre><p><strong>CSS</strong></p><pre class="css"><code>@font-face {
+  font-family: Chunkfive; src: url(&#39;Chunkfive.otf&#39;);
+}
+
+body, .usertext {
+  color: #F0F0F0; background: #600;
+  font-family: Chunkfive, sans;
+}
+
+@import url(print.css);
+@media print {
+  a[href^=http]::after {
+    content: attr(href)
+  }
+}</code></pre><p><strong>diff</strong></p><pre class="diff"><code>Index: languages/ini.js
+===================================================================
+--- languages/ini.js    (revision 199)
++++ languages/ini.js    (revision 200)
+@@ -1,8 +1,7 @@
+ hljs.LANGUAGES.ini =
+ {
+   case_insensitive: true,
+-  defaultMode:
+-  {
++  defaultMode: {
+     contains: [&#39;comment&#39;, &#39;title&#39;, &#39;setting&#39;],
+     illegal: &#39;[^\\s]&#39;
+   },
+
+*** /path/to/original timestamp
+--- /path/to/new      timestamp
+***************
+*** 1,3 ****
+--- 1,9 ----
++ This is an important
++ notice! It should
++ therefore be located at
++ the beginning of this
++ document!
+
+! compress the size of the
+! changes.
+
+  It is important to spell</code></pre><p><strong>HTML</strong></p><pre class="html"><code>&lt;!DOCTYPE html&gt;
+&lt;title&gt;Title&lt;/title&gt;
+
+&lt;style&gt;body {width: 500px;}&lt;/style&gt;
+
+&lt;script type=&quot;application/javascript&quot;&gt;
+  function $init() {return true;}
+&lt;/script&gt;
+
+&lt;body&gt;
+  &lt;p checked class=&quot;title&quot; id=&#39;title&#39;&gt;Title&lt;/p&gt;
+  &lt;!-- here goes the rest of the page --&gt;
+&lt;/body&gt;</code></pre><p><strong>.ini</strong></p><pre class="ini"><code>; boilerplate
+[package]
+name = &quot;some_name&quot;
+authors = [&quot;Author&quot;]
+description = &quot;This is \
+a description&quot;
+
+[[lib]]
+name = ${NAME}
+default = True
+auto = no
+counter = 1_000</code></pre><p><strong>Python</strong></p><pre class="python"><code>@requires_authorization
+def somefunc(param1=&#39;&#39;, param2=0):
+    r&#39;&#39;&#39;A docstring&#39;&#39;&#39;
+    if param1 &gt; param2: # interesting
+        print &#39;Gre\&#39;ater&#39;
+    return (param2 - param1 + 1 + 0b10l) or None
+
+class SomeClass:
+    pass
+
+&gt;&gt;&gt; message = &#39;&#39;&#39;interpreter
+... prompt&#39;&#39;&#39;</code></pre>
+<!-- anything you put here will go before the closing </body> tag
+     (ie: after the README’s contents) Markdown will become HTML  --><hr /><h1 id="injected-text">Injected Text</h1><p>This paragraph, the preceding heading and horizontal ruler were defined in the <code>include-after</code> string variable inside the YAML configuration file. They were injected after the contents of the <code>README.md</code> file, and before the closing <code>&lt;/body&gt;</code> tag.</p>
+
+        </section>
+        <aside id="sidebar">
+          <a href="https://github.com/jasonlong/architect-theme/archive/master.zip" class="button">
+            <small>Download</small>
+            .zip file
+           </a>
+          <a href="https://github.com/jasonlong/architect-theme/archive/master.tar.gz" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jasonlong/architect-theme">architect-theme</a> is maintained by <a href="https://github.com/jasonlong">jasonlong</a>.</p>
+
+          <p>This page was generated with<br><a href="https://tajmone.github.io/gh-themes-magick/"><strong>gh-themes-magick</strong></a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  </body>
+</html>
