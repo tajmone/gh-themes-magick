@@ -5,6 +5,12 @@ This is a live preview of one of the themes bundled with **gh-themes-magick**:
 - https://github.com/tajmone/gh-themes-magick — project page
 - https://tajmone.github.io/gh-themes-magick — project website
 
+```nohighlight
+VERSION: 1.0
+PANDOC:  1.19.x
+STATUS:  5/12 themes ported
+```
+
 **gh-themes-magick** exploits **pandoc**’s super-powers to convert your repo’s `README.md` file to a `docs/index.html` themed file. Your are basically getting a copy of the same themes found on [GitHub Page Generator](https://github.com/blog/1081-instantly-beautiful-project-pages), plus a pandoc html5 template for each theme, and scripts to auto-magically convert/update your project’s single-page website contents from the `README.md` file in your repo’s root.
 
 This means that now you can:
@@ -12,7 +18,6 @@ This means that now you can:
 1.  Enjoy GitHub’s automatic Page Generator when publishing your website from the `/docs/` folder on your `master` branch .
 2.  Update your website to mirror the repo’s latest `README.md` file, with a single click.
 
-  
 ------------------------------------------------------------------------
 
 <!-- #toc -->
@@ -309,22 +314,22 @@ include-after: |
 
 **gh-themes-magick** uses [**highlight.js**](https://highlightjs.org) browser library for highlighting code blocks.
 
-Each theme comes with a custom prebuilt version of **highlight.js** (v9.8.0) with 23 commonly used languages:
+Each theme comes with a custom prebuilt version of **highlight.js** (9.12.0) with 24 commonly used languages:
 
-|                     |                 |
-|---------------------|-----------------|
-| 1. Apache           | 13. JavaScript  |
-| 2. Bash             | 14. Makefile    |
-| 3. C\# 15. Markdown | 15. Markdown    |
-| 4. C++ 16. Nginx    | 16. Nginx       |
-| 5. CSS              | 17. Objective-C |
-| 6. CoffeeScript     | 18. PHP         |
-| 7. Diff             | 19. Perl        |
-| 8. HTML, XML        | 20. Python      |
-| 9. HTTP             | 21. Ruby        |
-| 10. Ini             | 22. SQL         |
-| 11. JSON            | 23. YAML        |
-| 12. Java            |                 |
+|                 |                   |
+|-----------------|-------------------|
+| 1. Apache       | 13. JavaScript    |
+| 2. Bash         | 14. Makefile      |
+| 3. C#           | 15. Markdown      |
+| 4. C++          | 16. Nginx         |
+| 5. CSS          | 17. Objective-C   |
+| 6. CoffeeScript | 18. PHP           |
+| 7. Diff         | 19. Perl          |
+| 8. HTML, XML    | 20. Python        |
+| 9. HTTP         | 21. Ruby          |
+| 10. Ini         | 22. SQL           |
+| 11. JSON        | 23. Shell Session |
+| 12. Java        | 24. YAML          |
 
 Here are some syntax highlighting previews...
 

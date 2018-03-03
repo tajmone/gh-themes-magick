@@ -1,0 +1,10 @@
+# ==============================================================================
+#                           GitHub Pages Themes Magick                          
+# ==============================================================================
+# .gitignore definitions file for the gh-themes-magick project:
+#  -- https://github.com/tajmone/gh-themes-magick
+# ------------------------------------------------------------------------------
+
+### Sass ###
+# Cache Folder
+.sass-cache

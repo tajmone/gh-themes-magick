@@ -1,0 +1,116 @@
+# ==============================================================================
+#                           GitHub Pages Themes Magick                          
+# ==============================================================================
+# .gitattributes definitions file for the gh-themes-magick project:
+#  -- https://github.com/tajmone/gh-themes-magick
+# ------------------------------------------------------------------------------
+
+# ==============================================================================
+#                            Line Endings Conversion                            
+# ==============================================================================
+# Set Git's default behaviour to text-files autodetection, in case users don't
+# have `core.autocrlf` set:
+* text=auto
+
+# ------------------------------------------------------------------------------
+#                    Text Files (EOL Normalization Settings)                    
+# ------------------------------------------------------------------------------
+
+## =================
+## SOURCE CODE FILES
+## =================
+
+## Pandoc Templates
+## ----------------
+*.template     text
+
+## Scripts
+## -------
+*.lua          text
+*.bat          text eol=crlf
+*.com          text eol=crlf
+*.sh           text eol=lf
+
+
+## ==================
+## MISC. DATA FORMATS
+## ==================
+*.yaml         text
+
+
+# =================
+## WEB-RELATED FILES
+## =================
+*.htm          text
+*.html         text
+*.css          text
+*.js           text
+*.sass         text
+*.scss         text
+
+## ===================
+## DOCUMENTATION FILES
+## ===================
+*.txt          text
+CHANGELIST     text
+COPYING        text
+LICENSE        text
+TODO           text
+
+## ===================
+## CONFIGURATION FILES
+## ===================
+
+## Git settings
+## ----------
+.gitattributes text
+.gitconfig     text
+.gitignore     text
+.gitmodules    text
+
+# ------------------------------------------------------------------------------
+#                                  Binary Files                                 
+# ------------------------------------------------------------------------------
+# Explicitly declare all files that are binary and shouldn't be modified by Git:
+
+## ========
+## GRAPHICS
+## ========
+## SVG treated as an asset (binary) by default.
+*.bmp          binary
+*.gif          binary
+*.icns         binary
+*.ico          binary
+*.jpeg         binary
+*.jpg          binary
+*.png          binary
+*.svg          binary
+
+## ===============
+## FONTS/WEB FONTS
+## ===============
+*-webfont.svg  binary
+*.eot          binary
+*.ttf          binary
+*.woff         binary
+*.woff2        binary
+
+# ==============================================================================
+#                                GitHub Linguist                                
+# ==============================================================================
+#  -- https://github.com/github/linguist
+# Manually define/override some extension so that GitHub's Linguist library can
+# 1) correctly gather statistics on source files, and
+# 2) use proper syntax highlighting on GitHub's WebUI.
+
+## ======================
+## PANDOC HTML5 TEMPLATES
+## ======================
+*.template     linguist-language=HTML
+
+## =============================
+## Pandoc KDE theme files (JSON)
+## =============================
+*.theme        linguist-language=JSON
+
+

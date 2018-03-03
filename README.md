@@ -10,7 +10,11 @@ The `configuration.yaml` file exposes all the template’s variables, providing 
 
 And – of course – this also works with any GitHub project looking for a single-page website.
 
-    STATUS: 5/12 themes ported
+```nohighlight
+VERSION: 1.0
+PANDOC:  1.19.x
+STATUS:  5/12 themes ported
+```
 
 ------------------------------------------------------------------------
 
@@ -42,7 +46,7 @@ I started to work on **gh-themes-magick** project at a time when **GitHub Pages 
 
 ... this somehow obliterates the main purpose of **gh-themes-magick** — ie: being able to use GitHub themes from `master` branch and have the website contents mirror the `README` file.
 
-Still ...   **gh-themes-magick** offer an alternative approach to publishing your project site — using pandoc templates instead of Jeyll. This allows easier customization of the themes themselves. Also, this project is open to host user created themes, beside those offered by GitHub; so, hopefully this repo might grow in time, offering a great variety of themes to chose from.
+Still ...   **gh-themes-magick** offer an alternative approach to publishing your project site — using pandoc templates instead of Jekyll. This allows easier customization of the themes themselves. Also, this project is open to host user created themes, beside those offered by GitHub; so, hopefully this repo might grow in time, offering a great variety of themes to chose from.
 
 Anyhow, the project was ready to be published, so I am publishing it nonetheless.
 
@@ -137,26 +141,26 @@ You can disable syntax highlighting for any fenced code block by giving it the `
 ```
 ````
 
-Each theme comes with a custom prebuilt version of **highlight.js** (v9.8.0) with 23 commonly used languages:
+Each theme comes with a custom prebuilt version of **highlight.js** (9.12.0) with 24 commonly used languages:
 
-|                     |                 |
-|---------------------|-----------------|
-| 1. Apache           | 13. JavaScript  |
-| 2. Bash             | 14. Makefile    |
-| 3. C\# 15. Markdown | 15. Markdown    |
-| 4. C++ 16. Nginx    | 16. Nginx       |
-| 5. CSS              | 17. Objective-C |
-| 6. CoffeeScript     | 18. PHP         |
-| 7. Diff             | 19. Perl        |
-| 8. HTML, XML        | 20. Python      |
-| 9. HTTP             | 21. Ruby        |
-| 10. Ini             | 22. SQL         |
-| 11. JSON            | 23. YAML        |
-| 12. Java            |                 |
+|                 |                   |
+|-----------------|-------------------|
+| 1. Apache       | 13. JavaScript    |
+| 2. Bash         | 14. Makefile      |
+| 3. C#           | 15. Markdown      |
+| 4. C++          | 16. Nginx         |
+| 5. CSS          | 17. Objective-C   |
+| 6. CoffeeScript | 18. PHP           |
+| 7. Diff         | 19. Perl          |
+| 8. HTML, XML    | 20. Python        |
+| 9. HTTP         | 21. Ruby          |
+| 10. Ini         | 22. SQL           |
+| 11. JSON        | 23. Shell Session |
+| 12. Java        | 24. YAML          |
 
-You can <b>create your custom build of **highlight.js** directly in your browser</b>: on the [website’s download page](https://highlightjs.org/download/#download-form) pick any languages you want from <b>a list of 169 languages</b> and download a taylored version to overwrite the one that comes with **gh-themes-magick** by default.
+You can <b>create your custom build of **highlight.js** directly in your browser</b>: on the [website’s download page](https://highlightjs.org/download/#download-form) pick any languages you want from <b>a list of 176 languages</b> and download a taylored version to overwrite the one that comes with **gh-themes-magick** by default.
 
-You can also overwrite the syntax highlighting theme, replacing it with on of the 77 themes available from **highlight.js**, or with your custom color scheme.
+You can also overwrite the syntax highlighting theme, replacing it with on of the 79 themes available from **highlight.js**, or with your custom color scheme.
 
 **Markdown**
 
