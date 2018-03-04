@@ -1,39 +1,47 @@
+# Pandoc v2 Support
+
+```nohighlight
+VERSION: 2.0
+PANDOC:  2.1.1
+STATUS:  5/12 themes ported
+```
+
 Good news for all maintainers of **Awesome** lists on GitHub: running a GitHub Pages website mirroring your `README.md` contents is now a *one-click* operation!
 
 With **gh-themes-magick** you can publish your project’s single page website from a `/docs/` folder on your `master` branch, using **GitHub Page Generator**’s themes, and auto-magically <b>update its contents to mirror the project’s `README.md`</b>.
 
 -   <b>Fully static</b> (no Jekyll)
 -   No `gh-pages` branch involved
--   Single YAML configuration file
+-   Single <b>YAML configuration</b> file
+-   All the power of <b>pandoc v2</b>
+-   [Now with <b>Task-Lists support</b>](#task-lists-support)
 
 The `configuration.yaml` file exposes all the template’s variables, providing access to the website’s **metadata** fields (description, keywords, ecc.) needed to <b>boost your website SEO,</b> and extra variables to include additional sytlesheets, custom javascript, and more.
 
-And – of course – this also works with any GitHub project looking for a single-page website.
-
-```nohighlight
-VERSION: 1.0
-PANDOC:  1.19.x
-STATUS:  5/12 themes ported
-```
+And – of course – this also works with any GitHub project looking for a single-page website, not necessarily built from the project's `README.md` but from any markdown documents. Likewise, with a few simple tweaks to the build script you can create a multipage website, exploiting the full power of pandoc's Markdown flavor.
 
 ------------------------------------------------------------------------
 
 Contents
 ========
 
-<!-- #toc -->
+<!-- MarkdownTOC autolink="true" bracket="round" autoanchor="false" lowercase="true" lowercase_only_ascii="true" uri_encoding="true" depth="3" -->
 
-* [Introduction](#introduction)
-* [How It Works](#how-it-works)
-* [Main Features](#main-features)
-    * [Single Configuration File](#single-configuration-file)
-    * [Syntax Highligthing](#syntax-highligthing)
-* [Available Themes](#available-themes)
-* [Setting up a Website](#setting-up-a-website)
-* [Updating Its Contents](#updating-its-contents)
-* [Licenses and Credits](#licenses-and-credits)
+- [Introduction](#introduction)
+- [How It Works](#how-it-works)
+- [Main Features](#main-features)
+    - [Single Configuration File](#single-configuration-file)
+    - [Syntax Highligthing](#syntax-highligthing)
+    - [Task-Lists Support](#task-lists-support)
+- [Available Themes](#available-themes)
+- [Setting up a Website](#setting-up-a-website)
+- [Updating Its Contents](#updating-its-contents)
+- [Licenses and Credits](#licenses-and-credits)
+    - [GitHub Themes](#github-themes)
+    - [Highlight.js](#highlightjs)
+    - [Task-List Lua Filter](#task-list-lua-filter)
 
-<!-- /toc -->
+<!-- /MarkdownTOC -->
 
 ------------------------------------------------------------------------
 
@@ -44,11 +52,11 @@ I started to work on **gh-themes-magick** project at a time when **GitHub Pages 
 
 - https://github.com/blog/2295-new-theme-chooser-for-github-pages
 
-... this somehow obliterates the main purpose of **gh-themes-magick** — ie: being able to use GitHub themes from `master` branch and have the website contents mirror the `README` file.
+... this somehow obliterated the main purpose of **gh-themes-magick** — ie: being able to use GitHub themes from `master` branch and have the website contents mirror the `README` file.
 
-Still ...   **gh-themes-magick** offer an alternative approach to publishing your project site — using pandoc templates instead of Jekyll. This allows easier customization of the themes themselves. Also, this project is open to host user created themes, beside those offered by GitHub; so, hopefully this repo might grow in time, offering a great variety of themes to chose from.
+Still ...   **gh-themes-magick** offers an alternative approach to publishing your project site — using pandoc templates instead of Jekyll. This allows easier customization of the themes themselves. Also, this project is open to host user created themes, beside those offered by GitHub; so, hopefully this repo might grow in time, offering a great variety of themes to chose from.
 
-Anyhow, the project was ready to be published, so I am publishing it nonetheless.
+With the release of pandoc v2, this project has acquired new meaning because of the powerful new features introduced in pandoc v2.
 
 
 ------------------------------------------------------------------------
@@ -247,6 +255,17 @@ Allow from All
 </Location>
 ```
 
+
+## Task-Lists Support
+
+Now __gh-themes-magick__ supports GitHub Flavored Markdown's Task-Lists, thanks to the pandoc Lua filter [`task-list.lua`][Task-List Lua]:
+
+- [x] Add Task-Lists support
+    + [x] Thanks to pandoc Lua filters
+- [x] Introduced in pandoc `v2.x`
+- [ ] Wasn't available in pandoc `v1.x`
+
+
 ------------------------------------------------------------------------
 
 Available Themes
@@ -308,6 +327,10 @@ Licenses and Credits
 
 **gh-themes-magick** is copyright © 2016, Tristano Ajmone ([@tajmone](https://github.com/tajmone)).
 
+Tristano Ajmone ([@tajmone](https://github.com/tajmone)) is the creator an maintainer of the **gh-themes-magick** project.</b> First released in December, 2016.
+
+## GitHub Themes
+
 **gh-themes-magick** is released under the **Creative Common Attribution 4.0** International License (CC BY 4.0). <b>The project is built around third party themes</b>, each one isolated in its own folder and <b>each released under the terms of its upstream license</b>:
 
 | THEME                        | AUTHOR         | FOLDER                  |    LICENSE      |
@@ -321,13 +344,18 @@ Licenses and Credits
 
 Detailed information on the themes’ licenses, and about the adaptative changes made to the original code and resources, can be found in each theme’s folder, inside the `LICENSE` and `CHANGELIST` files.
 
+## Highlight.js
+
 All themes also contains a copy of the [**highlight.js**](https://highlightjs.org) library and one of its CSS themes. <b>**Highlight.js** is copyright © 2006, [Ivan Sagalaev](https://github.com/isagalaev), released under BSD-3-Clause License.</b> The following highlight.js themes have been included in **gh-themes-magick** (some with changes):
 
 -   “[**GitHub Gist**](https://github.com/isagalaev/highlight.js/blob/master/src/styles/github-gist.css)” by [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
 -   “[**Docco**](https://github.com/isagalaev/highlight.js/blob/master/src/styles/docco.css)”, coverted from [Docco](http://jashkenas.github.io/docco/) by [Simon Madine](https://github.com/thingsinjars).
 -   “[**VIM-Hybrid**”](https://github.com/isagalaev/highlight.js/blob/master/src/styles/hybrid.css) by w0ng (<https://github.com/w0ng/vim-hybrid>)
 
-<b>Tristano Ajmone ([@tajmone](https://github.com/tajmone)) is the creator an maintainer of the **gh-themes-magick** project.</b> First released in December, 2016.
+
+## Task-List Lua Filter
+
+The scripts to convert from markdown to HTML use the [`task-list.lua`][Task-List Lua] pandoc filter, copied from the [lua-filters] project, released under the MIT license.
 
 
 [Architect Theme]:    https://github.com/jasonlong/architect-theme    "Architect theme project page"
@@ -381,3 +409,5 @@ All themes also contains a copy of the [**highlight.js**](https://highlightjs.or
 [MIT Leap Day]:   https://github.com/mattgraham/leapday/blob/master/LICENCE
 [MIT Merlot]:     https://github.com/cameronmcefee/merlot/blob/master/LICENSE
 
+[lua-filters]: https://github.com/pandoc/lua-filters "Visit the 'lua-filters' repository" 
+[Task-List Lua]: https://github.com/pandoc/lua-filters/tree/master/task-list "Visit the project page of 'task-list.lua' filter" 

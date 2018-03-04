@@ -2,8 +2,9 @@
 ECHO ==============================================================================
 ECHO :: Leap Day Theme :: updating website.
 :: NOTE: Don't use the "--section-divs" option with this theme!!!
-pandoc --smart --wrap=none --normalize --no-highlight ^
-       --from       markdown_github-hard_line_breaks+yaml_metadata_block ^
+pandoc --no-highlight ^
+       --lua-filter=task-list.lua ^
+       --from       markdown_github+smart+yaml_metadata_block+auto_identifiers ^
        --to         html5 ^
        --template   ./leapday.template ^
        --output     ./index.html ^

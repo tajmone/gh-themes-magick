@@ -401,7 +401,8 @@ ul {
   padding-left: 1.35em;
 }
 
-ul li {
+/* TWEAKED BY TAJMONE: */
+ul li:not(.task-list-item) {
   padding-left: 10px;
   background: transparent url(../images/chevron.png) left 6px no-repeat;
 }
@@ -555,8 +556,18 @@ dd p:first-child {
   font-style: italic;
 }
 
-/* ------ ADDITIONS BY @tajmone ------ */
+/*  ==============================================================================
+                                  CHANGES BY TAJMONE                              
+    ==============================================================================*/
 
 pre > code {
   padding: 0;
 } 
+
+/* Add Task_Lists Support */
+.task-list-item {
+  list-style-type: none;
+}
+.task-list-item-checkbox {
+  margin-left: -1em;
+}

@@ -6,8 +6,8 @@ This is a live preview of one of the themes bundled with **gh-themes-magick**:
 - https://tajmone.github.io/gh-themes-magick — project website
 
 ```nohighlight
-VERSION: 1.0
-PANDOC:  1.19.x
+VERSION: 2.0
+PANDOC:  2.1.1
 STATUS:  5/12 themes ported
 ```
 
@@ -18,21 +18,30 @@ This means that now you can:
 1.  Enjoy GitHub’s automatic Page Generator when publishing your website from the `/docs/` folder on your `master` branch .
 2.  Update your website to mirror the repo’s latest `README.md` file, with a single click.
 
+# Pandoc v2 Support
+
+Now __gh-themes-magick__ was updated to work with __pandoc v2__; so it now supports GitHub Flavored Markdown's Task-Lists, thanks to the pandoc Lua filter [`task-list.lua`][Task-List Lua]:
+
+- [x] Add Task-Lists support
+    + [x] Thanks to pandoc Lua filters
+- [x] Introduced in pandoc `v2.x`
+- [ ] Wasn't available in pandoc `v1.x`
+
 ------------------------------------------------------------------------
 
-<!-- #toc -->
+<!-- MarkdownTOC autolink="true" bracket="round" autoanchor="false" lowercase="true" lowercase_only_ascii="true" uri_encoding="true" depth="3" -->
 
-* [Themes Previews](#themes-previews)
-    * [Quick Usage Instructions](#quick-usage-instructions)
-        * [Theme Setup](#theme-setup)
-        * [Customization/Editing](#customizationediting)
-        * [Publishing on Github Pages](#publishing-on-github-pages)
-* [Ported Themes](#ported-themes)
-* [Unported Themes](#unported-themes)
-* [Configuration](#configuration)
-* [Syntax Highlighting](#syntax-highlighting)
+- [Themes Previews](#themes-previews)
+    - [Quick Usage Instructions](#quick-usage-instructions)
+        - [Theme Setup](#theme-setup)
+        - [Customization/Editing](#customizationediting)
+        - [Publishing on Github Pages](#publishing-on-github-pages)
+- [Ported Themes](#ported-themes)
+- [Unported Themes](#unported-themes)
+- [Configuration](#configuration)
+- [Syntax Highlighting](#syntax-highlighting)
 
-<!-- /toc -->
+<!-- /MarkdownTOC -->
 
 ------------------------------------------------------------------------
 
@@ -544,3 +553,5 @@ class SomeClass:
 [MIT Leap Day]:   https://github.com/mattgraham/leapday/blob/master/LICENCE
 [MIT Merlot]:     https://github.com/cameronmcefee/merlot/blob/master/LICENSE
 
+[lua-filters]: https://github.com/pandoc/lua-filters "Visit the 'lua-filters' repository" 
+[Task-List Lua]: https://github.com/pandoc/lua-filters/tree/master/task-list "Visit the project page of 'task-list.lua' filter" 

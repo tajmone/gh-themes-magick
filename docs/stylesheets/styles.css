@@ -514,7 +514,7 @@ section {
     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 2px 2px rgba(255, 255, 255, 0.5), inset 0 0 5px 5px rgba(255, 255, 255, 0.4);
 }
-section ul li:before {
+section ul li:not(.task-list-item):before {
     content: ">";
     display: inline-block;
     position: relative;
@@ -723,4 +723,16 @@ footer {
     bottom: auto;
     width: auto;
 }
+}
+
+/*  ==============================================================================
+                                  CHANGES BY TAJMONE                              
+    ==============================================================================*/
+
+/* Add Task_Lists Support */
+.task-list-item {
+  list-style-type: none;
+}
+.task-list-item-checkbox {
+  margin-left: -1em;
 }

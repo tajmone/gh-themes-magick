@@ -863,3 +863,14 @@ dl dd {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+/*  ==============================================================================
+                                  CHANGES BY TAJMONE                              
+    ==============================================================================*/
+
+/* Add Task_Lists Support */
+.task-list-item {
+  list-style-type: none;
+}
+.task-list-item-checkbox {
+  margin-left: -1em;
+}

@@ -239,3 +239,15 @@ a {
 
 .site-footer-credits {
   color: #819198; }
+
+/*  ==============================================================================
+                                  CHANGES BY TAJMONE                              
+    ==============================================================================*/
+
+/* Add Task_Lists Support */
+.task-list-item {
+  list-style-type: none;
+}
+.task-list-item-checkbox {
+  margin-left: -1em;
+}
