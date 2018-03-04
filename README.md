@@ -384,18 +384,18 @@ The scripts to convert from markdown to HTML use the [`task-list.lua`][Task-List
 [Time Machine x300]: https://github.com/tajmone/gh-themes-magick/raw/master/images/themes-thumbs/300/timemachine.gif "Time Machine theme screenshot"
 
 
-[Architect HTML Prev]:      https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/architect/index.html    "Architect theme live preview"
-[Cayman HTML Prev]:         https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/cayman/index.html       "Cayman theme live preview"
-[Dinky HTML Prev]:          https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/dinky/index.html        "Dinky theme live preview"
-[Hack HTML Prev]:           https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/hack/index.html         "Hack theme live preview"
-[Leap Day HTML Prev]:       https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/leapday/index.html      "Leap Day theme live preview"
-[Merlot HTML Prev]:         https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/merlot/index.html       "Merlot theme live preview"
-[Midnight HTML Prev]:       https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/midnight/index.html     "Midnight theme live preview"
-[Minimal HTML Prev]:        https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/minimal/index.html      "Minimal theme live preview"
-[Modernist HTML Prev]:      https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/modernist/index.html    "Modernist theme live preview"
-[Slate HTML Prev]:          https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/slate/index.html        "Slate theme live preview"
-[Tactile HTML Prev]:        https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/tactile/index.html      "Tactile theme live preview"
-[Time Machine HTML Prev]:   https://cdn.rawgit.com/tajmone/gh-themes-magick/c990c2f/gh-themes/timemachine/index.html  "Time Machine theme live preview"
+[Architect HTML Prev]:      https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/architect/index.html    "Architect theme live preview"
+[Cayman HTML Prev]:         https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/cayman/index.html       "Cayman theme live preview"
+[Dinky HTML Prev]:          https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/dinky/index.html        "Dinky theme live preview"
+[Hack HTML Prev]:           https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/hack/index.html         "Hack theme live preview"
+[Leap Day HTML Prev]:       https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/leapday/index.html      "Leap Day theme live preview"
+[Merlot HTML Prev]:         https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/merlot/index.html       "Merlot theme live preview"
+[Midnight HTML Prev]:       https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/midnight/index.html     "Midnight theme live preview"
+[Minimal HTML Prev]:        https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/minimal/index.html      "Minimal theme live preview"
+[Modernist HTML Prev]:      https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/modernist/index.html    "Modernist theme live preview"
+[Slate HTML Prev]:          https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/slate/index.html        "Slate theme live preview"
+[Tactile HTML Prev]:        https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/tactile/index.html      "Tactile theme live preview"
+[Time Machine HTML Prev]:   https://cdn.rawgit.com/tajmone/gh-themes-magick/001e280/gh-themes/timemachine/index.html  "Time Machine theme live preview"
 
 
 

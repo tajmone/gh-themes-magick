@@ -21,7 +21,7 @@ GitHub Pages Themes Magick changelog.
 
 # gh-themes-magick v2
 
-- __2018/03/03__
+- `v2.0.0` — __2018/03/03__
     + Updated all scripts to work with pandoc v2 (`v2.1.1`)
     + Added pandoc Lua filter ["`task-list.lua`"][Task-List Lua] to allow support for GFM style Task Lists (script was modified to disable CSS injection and prevent conflicts with "`header-includes`" in YAML headers). Taken from [lua-filters] projects, MIT License.
     + Updated `LICENSE` files to include credits and license of "`task-list.lua`".
@@ -29,6 +29,7 @@ GitHub Pages Themes Magick changelog.
         * Tweaked all themes' CSS to add correct support for Task-Lists.
         * Tweaked "Leap Day" and "Merlot" themes' CSS to fix issues with Task-Lists.
         * Tweaked "Dinky" theme's CSS to fix lists margins splling to the left.
+- Update Live HTML Preview links.
 
 # gh-themes-magick v1
 
